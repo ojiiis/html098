@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Intro to html-2024</title>
+        <link rel="icon" href="img/icon.png">
+
+    </head>
+    
+    <body>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #header{
+          position: relative;  
+          height: 20px;
+        }
+
+        .header-child{
+          display:inline-block;
+          position: absolute;
+          
+         }
+         #cn{
+            margin-left: 50%;
+         }
+         #page-name p{
+           text-align: center;
+           font-size: 10px;
+         }
+         #content{
+            width: 100%;
+            margin-top: 10px;
+         }
+         .content-child{
+            display: inline-block;
+            width: 350px;
+            height: 300px;
+            background: green;
+             text-align:center ;
+             padding: 10px;
+         }
+         #form{
+            margin-left: 20px;
+         }
+     </style>
+       <div id="wrapper">
+        <!-- header start -->
+           <div id="header">
+               <div class="header-child">Logo</div>
+               <div class="header-child" id="cn">Company Name</div>
+           </div>
+        <!-- header end -->
+
+        <!-- page name -->
+            <div id="page-name"><p>Page name</p></div>
+        <!-- page name -->
+
+        <!--page content-->
+        <div id="content">
+            <div class="content-child">Write up</div>
+            <div class="content-child" id="form">
+                <form>
+                     <input type="text" placeholder="Enter your name" name="fullname"><br><br>
+                     <input type="email" placeholder="Enter your email" name="email"><br><br>
+                     <input type="tel"  placeholder="Enter your phone number" name="phone"><br><br>
+                     <textarea placeholder="Enter your Message" name="your-message"></textarea><br><br>
+                     <input type="checkbox"> Click here to accept our terms<br><br>
+                     <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+        
+        <!--page content-->
+       </div>
+
+    </body>
+    
+</html>
