@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #head-wrapper{
+            position: fixed;
+            height: 30px;
+            width: 100%;
+             left:0;
+            top:0;
+            z-index: 1;
+        }
+        #head{
+            position: relative;
+            height: 100%;
+            background:#063a5e;
+            opacity: 0.85;
+        }
+        .head-inner{
+           position: absolute;
+           top:50%;
+           transform: translate(0%,-50%);
+           color:white;
+        }
+        #navigation{
+         right:0;
+        }
+        #banner{
+            margin-top: -50px;
+            height: 330px;
+            background: orange;
+            position: relative;
+           background-image: url('https://nectarineprint.com/website-signature-pools/site/images/backgrounds/background-10-1920x900.jpg');
+           background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        #banner div{
+           position: absolute;
+           left:50%;
+           top:50%;
+           transform: translate(-50%,-50%);
+        }
+        .banner-text{
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 2px 2px black;
+        }
+    </style>
+    <div  id="wrapper">
+          <div id="head-wrapper">
+            <div id="head">
+                <div class="head-inner" id="logo">Logo</div>
+                <div class="head-inner" id="navigation">navigation</div>
+            </div>
+          </div>
+          
+          <div id="banner">
+             <div>
+                <h1 class="banner-text">Explore. Discover. Live</h1>
+                <p class="banner-text">Swimming Pools & Hot Tubs Teignmouth</p>
+             </div>
+          </div>
+    </div>
+</body>
+</html>
